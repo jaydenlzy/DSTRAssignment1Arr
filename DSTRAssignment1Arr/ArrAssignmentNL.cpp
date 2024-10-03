@@ -1,3 +1,5 @@
+/*Lai Yin Xiang TP068461*/
+
 #include <iostream>
 #include <fstream>
 #include <string> 
@@ -20,6 +22,10 @@ void loadWords(const string& filename, string*& wordArray, int& wordCount, int m
     }
 
     file.close();
+
+    for (int i = 0; i < wordCount; i++) {
+        cout << wordArray[i] << endl;
+    }
     cout << "Loaded " << wordCount << " words from " << filename << endl;
 }
 
